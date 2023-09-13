@@ -214,7 +214,6 @@ public class Fraction implements INumber<Fraction> {
 		System.out.println("The array in reverse order:");
 
 		printReverse(fractionArray);
-		
 	}
 
 }
