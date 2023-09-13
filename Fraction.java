@@ -198,13 +198,21 @@ public class Fraction implements INumber<Fraction> {
 		for(int i=0; i<fractionArray.length; i++) {
 			fractionArray[i] = new Fraction(i, i+1);
 		}
-		fractionArray[99] = new Fraction(55,56);
+		fractionArray[10] = new Fraction(55,56);
+		System.out.print(tester1+" plus "+tester2+" = ");
 		tester1.plus(tester2).print();
+		System.out.print(tester1+" minus "+tester2+" = ");
 		tester1.minus(tester2).print();
+		System.out.print(tester1+" divided by "+tester2+" = ");
 		tester1.divide(tester2).print();
+		System.out.print(tester1+" multiplied by "+tester2+" = ");
 		tester1.multiply(tester2).print();
-		System.out.println(findFrequent(fractionArray));
+		
+		System.out.println("The most frequent fraction is: "+findFrequent(fractionArray));
+		System.out.println("The sorted array:");
 		insertionSort(fractionArray);
+		System.out.println("The array in reverse order:");
+
 		printReverse(fractionArray);
 		
 	}
