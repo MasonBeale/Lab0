@@ -2,7 +2,7 @@ package labspack;
 
 import java.util.*;
 
-public class Fraction implements INumber<Fraction> {
+public class Fraction implements INumber<Fraction>{
 	private int numerator;
 	private int denominator;
 	
